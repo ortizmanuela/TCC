@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: #FFFCE9;
+}
+
+.login {
+    font-size: 300%;
+    font-weight: bolder;
+    color: #D4A373;
+    align-items: center;
+    text-align: center;
+    margin-top: 8%;
+}
+
+#e-mail {
+    background-color: #CCD5AE;
+    border-radius: 2vw;
+    color: #597F34;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 1%;
+    margin-left: 34%;
+    margin-top: 5%;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+#senha {
+    background-color: #CCD5AE;
+    border-radius: 2vw;
+    color: #597F34;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 1%;
+    margin-left: 34%;
+    margin-top: 2%;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+.escrita_2 {
+    color: #D4A373;
+    /* margin-top: ; */
+    font-size: 95%;
+    border: none;
+    margin-top: 1%;
+    justify-content: center;
+    display: flex;
+}
+
+.enviar {
+    background-color: #597F34;
+    border-radius: 2vw;
+    text-decoration: none;
+    color: white;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    border: none;
+    padding: 1%;
+    margin-left: 37%;
+    margin-top: 2%;
+    font-size: 100%;
+}

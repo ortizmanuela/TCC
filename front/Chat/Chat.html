@@ -1,0 +1,56 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Chat.css">
+    <title>Chat</title>
+ </head>
+ <body>
+    
+    <!-- Header -->
+    <header>
+        <nav id="navbar">
+            <img id="nav_logo" src="../../img/logo_header.png" alt="">
+
+            <ul id="nav_list">
+                <a href="/front/Arquivos/Arquivos.html" class="link_pagina_nova">
+                    <img src="../../img/Arquivo.svg" alt="" class="icone">
+                    <p class="texto_icone"> Arquivos </p>
+                </a>
+                <a href="/front/Agenda/Agenda.html" class="link_pagina_nova">
+                    <img src="../../img/Agenda.svg" alt="" class="icone">
+                    <p class="texto_icone"> Agenda </p>
+                </a>
+                <a href="/front/Chat/Chat.html" class="link_pagina_nova">
+                    <img src="../../img/Chat.svg" alt="" class="icone">
+                    <p class="texto_icone_atual"> Chat </p>
+                </a>
+                <a href="/front/feed/feed.html" class="link_pagina_nova">
+                    <img src="../../img/Feed.svg" alt="" class="icone">
+                    <p class="texto_icone"> Feed </p>
+                </a>
+            </ul>
+    </header>
+
+    <!-- Main --->
+     <main>
+        <p class="pagina"> Chat </p>
+
+        <div id="chat-container">
+            <div id="messages"></div>
+            <form id="chat-form">
+                <input type="text" id="message-input" placeholder="Digite sua mensagem" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+     </main>
+
+     <script src="../Chat/Chat.js"></script>
+ </body>
+ </html>

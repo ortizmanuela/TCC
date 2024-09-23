@@ -1,0 +1,91 @@
+/* header */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+header {
+    width: 100%;
+    padding: 5px 0%;
+    position: sticky;
+    background-color: #CCD5AE;
+}
+
+#nav_logo {
+    height: auto;
+    width: 18%;
+    margin-left: 1.7%;
+}
+
+#navbar {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav_list {
+    display: flex;
+    text-decoration: none;
+    gap: 30%;
+}
+
+.link_pagina_nova {
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: #CCD5AE;
+    color: #597F34;
+    font-size: 12px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.icone {
+    margin-right: 10%;
+    width: 80%;
+    height: 80%;
+}
+
+
+/* main */
+
+main {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: #FFFCE9;
+    
+}
+
+.sobre {
+    font-size: 200%;
+    font-weight: bolder;
+    color: #D4A373;
+    margin-left: 3%;
+    padding: 2%;
+}
+
+.corpo {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.titulo {
+    color:#D4A373;
+    margin-top: 2%;
+    font-size: 130%;
+    font-weight: bolder;
+}
+
+.texto {
+    color:#D4A373;
+    margin-top: 1%;
+    font-size: 110%;
+    line-height: 170%;
+}

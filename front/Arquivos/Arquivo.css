@@ -1,0 +1,162 @@
+/* header */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+header {
+    width: 100%;
+    padding: 5px 0%;
+    position: sticky;
+    background-color: #CCD5AE;
+}
+
+#nav_logo {
+    height: auto;
+    width: 20%;
+    margin-left: 2%;
+}
+
+#navbar {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav_list {
+    display: flex;
+    text-decoration: none;
+    gap: 30%;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #597F34;
+    text-align: center;
+}
+
+.link_pagina_nova {
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: #CCD5AE;
+    color: #597F34;
+    font-size: 12px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.icone {
+    margin-right: 10%;
+    width: 80%;
+    height: 80%;
+}
+
+.texto_icone_atual {
+    font-weight: bold;
+    text-decoration:underline;
+}
+
+
+/* main */
+*{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+main {
+    background-color: #FFFCE9;
+    height: 90vh;
+}
+
+.pagina {
+    padding-top: 2%;
+    padding-left: 9%;
+    font-size: 150%;
+    color: #D4A373;
+    font-weight: bold;
+    text-decoration:underline;
+    
+}
+
+.botoes {
+    display: none;
+}
+
+.input {
+    opacity: 0;
+}
+
+.adicionar {
+    background-color: #CCD5AE;
+    border-radius: 2vw;
+    color: #597F34;
+    width: 93%;
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 0.7%;
+    margin-left: 3%;
+    margin-top: 2%;
+    font-size: 100%;
+    text-decoration: none;
+    
+}
+
+.botao {
+    background-color: #CCD5AE;
+    color: #597F34;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 0.7%;
+    margin-left: 5%;
+    font-size: 100%;
+    text-decoration: none;
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+}
+
+
+#ultimo_botao {
+    background-color: #CCD5AE;
+    color: #597F34;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 0.7%;
+    margin-left: 5%;
+    font-size: 100%;
+    text-decoration: none;
+    border-bottom-left-radius: 2vw;
+    border-bottom-right-radius: 2vw;
+}
+
+.img_nova_pasta {
+    height: 10%;
+    width: 10%;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+.img_arquivos {
+    height: 10%;
+    width: 10%;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+.img_imagem {
+    height: 10%;
+    width: 9%;
+    margin-right: 3%;
+    margin-left: 3%;
+
+}

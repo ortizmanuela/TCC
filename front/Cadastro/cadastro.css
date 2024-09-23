@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: #FFFCE9;
+}
+
+.botao_voltar {
+    width: 2.5vw;
+    height: auto;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+.cadastro {
+    font-size: 300%;
+    font-weight: bolder;
+    color: #D4A373;
+    align-items: center;
+    text-align: center;
+    margin-top: 4%;
+}
+
+#nome_completo {
+    background-color: #CCD5AE;
+    border-radius: 2vw;
+    color: #597F34;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 1%;
+    margin-left: 34%;
+    margin-top: 3%;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+#email {
+    background-color: #CCD5AE;
+    border-radius: 2vw;
+    color: #597F34;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 1%;
+    margin-left: 34%;
+    margin-top: 1%;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+#senha {
+    background-color: #CCD5AE;
+    border-radius: 2vw;
+    color: #597F34;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 1%;
+    margin-left: 34%;
+    margin-top: 1%;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+#confirmar_senha {
+    background-color: #CCD5AE;
+    border-radius: 2vw;
+    color: #597F34;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 1%;
+    margin-left: 34%;
+    margin-top: 1%;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+#enviar {
+    background-color: #597F34;
+    border-radius: 2vw;
+    color: white;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 1%;
+    margin-left: 40%;
+    margin-top: 4%;
+    font-size: 100%;
+    text-decoration: none;
+}

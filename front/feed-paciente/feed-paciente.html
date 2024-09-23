@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="feed-paciente.css">
+    <title>Feed</title>
+</head>
+
+<body>
+    
+    <!-- Header -->
+    <header>
+        <nav id="navbar">
+            <img id="nav_logo" src="../../img/logo_header.png" alt="">
+
+            <ul id="nav_list">
+                <a href="../chat-paciente/chat-paciente.html" class="link_pagina_nova">
+                    <img src="../../img/Chat.svg" alt="" class="icone">
+                    <p class="texto_icone"> Chat </p>
+                </a>
+                <a href="../feed-paciente/feed-paciente.html" class="link_pagina_nova">
+                    <img src="../../img/Feed.svg" alt="" class="icone">
+                    <p class="texto_icone_atual"> Feed </p>
+                </a>
+            </ul>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <p class="pagina"> Feed </p>
+
+        <div id="post-container">
+            <div>
+                <ul id="usuario">
+                    <img src="../../img/icone usuario.svg" alt="" class="icone_usuario">
+                    <p class="perfil"></p>
+                </ul>
+            </div>
+            <div class="post">
+                <div class="textos">
+                    <h2 class="titulo"></h2>
+                    <p class="legenda"></p>
+                </div>
+            </div>
+
+    </main>
+
+    <script src="feed-paciente.js"></script>
+</body>
+</html>
