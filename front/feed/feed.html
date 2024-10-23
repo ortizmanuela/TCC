@@ -43,41 +43,27 @@
     <main>
         <p class="pagina"> Feed </p>
 
-        <div id="post-container">
-            <div>
-                <ul id="usuario">
-                    <img src="../../img/icone usuario.svg" alt="" class="icone_usuario">
-                    <p class="perfil">Profissional 1</p>
-                </ul>
-            </div>
-            <div class="post">
-                <div class="textos">
-                    <h2 class="titulo"> Transtorno de humor e ansiedade</h2>
-                    <p class="legenda"> Um transtorno do humor é diagnosticado quando a tristeza ou euforia for mais intensa que o normal, for acompanhada por alguns outros sintomas e comprometer a capacidade funcional física, social e no trabalho.</p>
-                </div>
-            </div>
-        </div>
+        <!-- Contêiner para exibir os posts carregados -->
+        <div id="post-container"></div>
 
-
-    
         <div id="novo_post">
             <button class="botao">
-                <img src="../../img/adicionar.svg" alt="" class="img_botao">
+                <img src="../../img/adicionar_branco.svg" alt="" class="img_botao">
                 <a>Novo Post </a>
             </button>
         </div>
-    
-        <div id="quadro_postando">
+
+        <div id="quadro_postando" style="display: none;"> <!-- Inicialmente oculto -->
             <section class="bloco_profissional">
                 <div class="profissional_post">
-                    <img src="../../img/icone usuario branco.svg" alt="" class="icone_usuario_branco">
+                    <img src="../../img/icone_usuario_branco.svg" alt="" class="icone_usuario_branco">
                     <p class="escrita_novo_post"> Profissional 1 </p>
                 </div>
                 <div class="sair">
-                    <img id= "sair" src="../../img/x.svg" alt="">
+                    <img id="sair" src="../../img/x.svg" alt="">
                 </div>
             </section>
-    
+
             <hr class="linha_divisao">
 
             <div class="postagem">
@@ -85,19 +71,19 @@
                     <input class="inputs_novo_post" id="titulo" type="text" placeholder="Adicionar um assunto">
                     <input class="inputs_novo_post" id="legenda" type="text" placeholder="Digite uma legenda">
                 </div>
-        
+
                 <section class="bloco_icones">
                     <button id="quadro_formulario" type="button" onclick="enviar()">
-                        <img src="../../img/adicionar.svg" alt="" class="img_botao">
-                            Adicionar Post
+                        <img src="../../img/adicionar_branco.svg" alt="" class="img_botao">
+                        Adicionar post
                     </button>
                 </section>
             </div>
         </div>
     </main>
 
-    <div class="fundo" id="fundo"></div>
-    
+    <div class="fundo" id="fundo" style="display: none;"></div> <!-- Inicialmente oculto -->
+
     <script src="feed.js"></script>
 </body>
 

@@ -12,7 +12,7 @@ botao_criar_post.onclick = function(){
   fundo.style.display = 'block'
 };
 
-document.getElementById('quadro_formulario').addEventListener('click', function() {
+quadro_formulario.addEventListener('click', function() {
   const novo_post = document.getElementById('novo_post');
   novo_post.style.position = 'absolute';
   novo_post.style.bottom = '0';
@@ -28,7 +28,7 @@ document.getElementById('quadro_formulario').addEventListener('click', function(
   
   let dados = {titulo, legenda}
   console.log(dados);
-  const response = await fetch('http://localhost:3008/api/store/feed', {
+  const response = await fetch('http://localhost:3010/api/store/feed', {
     method: "POST",
     headers: {"Content-type": "application/json;charset=UTF-8"},
     body: JSON.stringify(dados)
@@ -64,7 +64,7 @@ sair.onclick = function(){
 //Mostrar os dados no console//
 // document.addEventListener('DOMContentLoaded', async () => {
 async function getPosts() {
-  const response = await fetch('http://localhost:3008/api/get/getposts');
+  const response = await fetch('http://localhost:3010/api/getposts');
   const result = await response.json();
 
   if(result.success) {
@@ -105,25 +105,22 @@ async function getPosts() {
       divPost.appendChild(divTextos)
 
       postagem_final.appendChild(divPost)
-      // postagem_final.appendChild(card)
      })
-  // } else {
-  //   console.log("Erro", result.sql);
   }
 };
 getPosts();
-
-
-
+/*
 // Espera a página carregar completamente antes de executar o código
 document.addEventListener('DOMContentLoaded', async () => {
   // Faz uma requisição HTTP GET para buscar os posts do servidor
-  const response = await fetch('http://localhost:3008/api/get/getposts');
+  const response = await fetch('http://localhost:3010/api/get/getposts', {
+    method: "GET",
+    headers: {"Content-type": "application/json;charset=UTF-8"} 
+  });
   const result = await response.json(); // Converte a resposta para JSON
+
+  console.log(result);
 
   // Seleciona o contêiner onde os posts serão exibidos
   const postContainer = document.getElementById('post-container');
-});
-
-
-document.getElementById('quadro-formulario').addEventListener('click, funcion')
+});*/

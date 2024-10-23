@@ -1,85 +1,281 @@
 /* header */
 *{
-    margin: 0;
-    padding: 0;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 header {
-    width: 100%;
-    padding: 5px 0%;
-    position: sticky;
-    background-color: #CCD5AE;
+  width: 100%;
+  padding: 5px 0%;
+  position: sticky;
+  background-color: #CCD5AE;
 }
 
 #nav_logo {
-    height: auto;
-    width: 20%;
-    margin-left: 2%;
+  height: auto;
+  width: 20%;
+  margin-left: 2%;
 }
 
 #navbar {
-    width: 85%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #nav_list {
-    display: flex;
-    text-decoration: none;
-    gap: 30%;
-}
-
-.nav-item a {
-    text-decoration: none;
-    color: #597F34;
-    text-align: center;
+  display: flex;
+  text-decoration: none;
+  gap: 30%;
 }
 
 .link_pagina_nova {
-    display: flex;
-    align-items: center;
-    border: none;
-    background-color: #CCD5AE;
-    color: #597F34;
-    font-size: 12px;
-    text-decoration: none;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: #CCD5AE;
+  color: #597F34;
+  font-size: 12px;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .icone {
-    margin-right: 10%;
-    width: 80%;
-    height: 80%;
+  margin-right: 10%;
+  width: 80%;
+  height: 80%;
 }
 
 .texto_icone_atual {
-    font-weight: bold;
-    text-decoration:underline;
+  font-weight: bold;
+  text-decoration:underline;
 }
 
-
-/* main */
-*{
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+/* Principal */
+* {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 main {
-    background-color: #FFFCE9;
-    height: 90vh;
-}
-.pagina {
-    padding-top: 2%;
-    padding-left: 9%;
-    font-size: 150%;
-    color: #D4A373;
-    font-weight: bold;
-    text-decoration:underline;
-    
+  background-color: #FFFCE9;
+  height: 90vh;
+  display: flex;
 }
 
+.pagina {
+  padding-top: 2%;
+  padding-left: 9%;
+  font-size: 150%;
+  color: #D4A373;
+  font-weight: bold;
+  text-decoration: underline;
+
+} 
+
+/* Importa a fonte Google - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
+/* calendário */
+.wrapper { 
+  width: 700px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 5%;
+}
+
+.wrapper header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
+header .icones { 
+  padding-right: 5%;
+}
+
+header .icones span {
+  height: 38px;
+  width: 38px;
+  margin: 0 1px;
+  cursor: pointer;
+  color: #878787;
+  text-align: center;
+  line-height: 38px;
+  font-size: 1.9rem;
+  user-select: none;
+  border-radius: 50%;
+}
+
+.icones span:last-child { 
+  margin-right: -10px;
+}
+
+header .icones span:hover {
+  background: #f2f2f2;
+}
+
+header .data-atual {
+  font-size: 1.45rem;
+  font-weight: 500;
+  padding-left: 4%;
+}
+
+.calendario {
+  background: #fff;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+  padding: 4%;
+}
+
+.calendario ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+}
+
+.calendario .dias { 
+  margin-bottom: 20px;
+}
+
+.calendario li {
+  color: #333;
+  width: calc(100% / 7);
+  font-size: 1.07rem;
+}
+
+.calendario .semanas li { 
+  font-weight: 500;
+  cursor: default;
+}
+
+.calendario .dias li {
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  margin-top: 30px;
+}
+
+.dias li.inativo {
+  color: #aaa;
+}
+
+.dias li.ativo {
+  color: #fff;
+}
+
+.dias li::before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  z-index: -1;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dias li.ativo::before {
+  background: #597F34;
+}
+
+.dias li:not(.ativo):hover::before { 
+  background: #f2f2f2;
+}
+
+#quadro_agendamento {
+  display: none; 
+  flex-direction: column;
+  background-color: #CCD5AE;
+  border: none;
+  padding: 3%;
+  border-top-left-radius: 1.5vw;
+  border-top-right-radius: 1.5vw;
+  margin-top: 5%;
+  margin-right: 4%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  gap: 2vh;
+}
+
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+
+}
+
+.inputs_novo_agendamento {
+  background: transparent;
+  border: none;
+  border-bottom: 1.5px solid #FFFFFF;
+  color: #FFFFFF;
+  padding: 0.8em 0.5em;
+  font-size: 100%;
+}
+
+.inputs_novo_agendamento:focus {
+  border-bottom: 1.5px solid #597F34; 
+  outline: none; 
+}
+
+.botao_agendamento {
+  background-color: #597F34;
+  border-radius: 1.5vw;
+  color: #FFFFFF;
+  width: 100%; 
+  padding: 0.8em;
+  font-size: 1em;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  cursor: pointer;
+  border: none;
+}
+
+#consultas_agendadas {  
+  flex-direction: column;
+  background-color: #CCD5AE;
+  border: none;
+  padding: 3%;
+  border-top-left-radius: 1.5vw;
+  border-top-right-radius: 1.5vw;
+  margin-top: 5%;
+  margin-right: 3%;
+  margin-left: 1%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+#consultas_agendadas h2 {
+  font-size: 1.5rem;
+  color: #597F34;
+  font-weight: bold;
+}
+
+#lista_consultas {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#lista_consultas li {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #CCD5AE;
+  border-radius: 5px;
+  color: #333;
+  font-weight: 500;
+}

@@ -10,7 +10,7 @@
 //   }); 
 
 async function getPosts() {
-  const response = await fetch('http://localhost:3008/api/get/getposts');
+  const response = await fetch('http://localhost:3008/api/getposts');
   const result = await response.json();
   const postagem_final = document.getElementById('post-container');
     result.data.forEach(post => {
@@ -58,7 +58,7 @@ getPosts();
 // Espera a página carregar completamente antes de executar o código
 document.addEventListener('DOMContentLoaded', async () => {
   // Faz uma requisição HTTP GET para buscar os posts do servidor
-  const response = await fetch('http://localhost:3008/api/get/getposts');
+  const response = await fetch('http://localhost:3008/api/getposts');
   const result = await response.json(); // Converte a resposta para JSON
 
   // Seleciona o contêiner onde os posts serão exibidos

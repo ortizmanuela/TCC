@@ -22,10 +22,14 @@ button.onclick = async function() {
 
     // Verifica se a resposta do servidor indica sucesso no login
     if (result.success) {
-        alert('Logado com sucesso'); // Mostra uma mensagem de sucesso ao usuário
-        window.location.href = ("../Home-paciente/home-paciente.html"); // Redireciona o usuário para a página de feed
+        if(email === '' || senha === '') {
+            alert('preencha os campos!!');
+        } else {
+            alert('Logado com sucesso'); // Mostra uma mensagem de sucesso ao usuário
+            window.location.href = ("../Home-paciente/home-paciente.html"); // Redireciona o usuário para a página de feed
+        }
     } else {
         // Mostra uma mensagem de erro caso o login falhe (e-mail ou senha incorretos)
-        alert('Email ou senha incorretos.');
+        alert('Seu email ou senha está incorreto. Se ainda não realizou seu cadastro clique no link abaixo');
     }
 };

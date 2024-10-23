@@ -38,11 +38,11 @@ button.onclick = async function(e) {
         // Verifica se a resposta contém uma chave "success" indicando sucesso
         if (content.success) {
             alert("Sucesso");
-            window.location.href = ("../Login/login.html"); // Redireciona o usuário para a página de feed
+            window.location.href = ("../Login/login.html"); // Redireciona o usuário para a página de login
             // Mostra um alerta de sucesso para o usuário
         } else {
             // Mostra um alerta de erro caso algo tenha dado errado no cadastro
-            alert("Erro ao cadastrar. Verifique os dados inseridos ou se você já possui uma conta."); 
+            alert("Erro ao cadastrar. Verifique os dados inseridos ou se você já possui uma conta com esse e-mail."); 
         }
 
     } catch (error) {

@@ -70,12 +70,8 @@ header {
 }
 
 body {
-    height: 100%;
-}
-
-main {
     background-color: #FFFCE9;
-    height: 90vh;
+    height: 100%;
 }
 
 .pagina {
@@ -178,6 +174,7 @@ main {
     justify-content: center;
     align-items: center;
     width: 3vw;
+    color: #597F34;
 }
 
 
@@ -189,9 +186,10 @@ main {
     transform: translate(-50%, -50%);
     flex-direction: column;
     gap: 10px;
-    background-color: #597F34;
+    background-color: #CCD5AE;
     font-size: 2.5vh;
-    color: #CCD5AE;
+    color: #597F34;
+    font-weight: bold;
     width: 50vw;
     height: 50vh;
     margin-left: 2%;
@@ -221,6 +219,10 @@ main {
     gap: 1vw;
 }
 
+#sair {
+    width: 2vw;
+}
+
 .sair {
     width: 2.5vw;
     display: flex;
@@ -231,44 +233,54 @@ main {
 
 .sair:hover {
     cursor: pointer;
-    border: 1px solid white;
+    border: 1px solid #597F34;
 }
 
 .linha_divisao {
     width: 100%;
-    border: 1px solid #FFFFFF;
+    border: 1px solid #597F34;
 }
 
 #quadro_formulario {
-    background-color: #CCD5AE;
+    background-color: #597F34;
     border-radius: 2vw;
-    color: #597F34;
-    width: 25%;
+    color: #FFFFFF;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     border: none;
     padding-right: 1%;
     position: absolute;
-
+    text-decoration: none;
 }
 
 .inputs_novo_post {
     background: transparent;
-    border: 0;
-    border-bottom: 1px solid #FFFFFF;
+    border: none;
+    border-bottom: 1.5px solid #597F34;
     color: #FFFFFF;
+    padding: 0.6em 0.3em;
+    font-size: 100%;
 }
 
 .inputs_novo_post::placeholder {
     color: #FFFFFF;
 }
 
+.inputs_novo_post:focus {
+    border-bottom: 1.5px solid #597F34; /* Cor da borda ao focar */
+    outline: none; /* Remove o contorno padrão */
+}
+
 .bloco_icones {
     display: flex;
-    margin-top: 25%;
-    margin-left: 73%;
+    margin-top: 15%;
+    margin-left: 65%;
+    width: 20%;
     position: absolute;
+    border: none;
+    padding: 2%;
 }
 
 .fundo {

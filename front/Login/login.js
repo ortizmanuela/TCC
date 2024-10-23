@@ -31,6 +31,6 @@ button.onclick = async function () {
         }
     } else {
         // Mostra uma mensagem de erro caso o login falhe (e-mail ou senha incorretos)
-        alert('Seu email ou senha está incorreto. Se ainda não realizou sem cadastro clique no link abaixo');
+        alert('Seu email ou senha está incorreto. Se ainda não realizou seu cadastro clique no link abaixo');
     }
 };

@@ -28,7 +28,7 @@ button.onclick = async function(e) {
         if (content.success) {
             alert("Sucesso"); 
         } else {
-            alert("Erro ao cadastrar. Vefique os dados inseridos ou se você já possui uma conta."); 
+            alert("Erro ao cadastrar. Vefique os dados inseridos ou se você já possui uma conta com esse e-mail."); 
         }
 
     } catch (error) {
