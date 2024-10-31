@@ -16,25 +16,29 @@
    <!-- Header -->
    <header>
       <nav id="navbar">
-         <img id="nav_logo" src="../../img/logo_header.png" alt="">
+         <img id="nav_logo" src="../../img/Logo_header.png" alt="">
 
          <ul id="nav_list">
-            <a href="/front/Arquivos/Arquivos.html" class="link_pagina_nova">
+            <a href="../Arquivos/Arquivos.html" class="link_pagina_nova">
                <img src="../../img/Arquivo.svg" alt="" class="icone">
                <p class="texto_icone"> Arquivos </p>
-            </a>
-            <a href="/front/Agenda/Agenda.html" class="link_pagina_nova">
+           </a>
+           <a href="../Agenda/Agenda.html" class="link_pagina_nova">
                <img src="../../img/Agenda.svg" alt="" class="icone">
                <p class="texto_icone_atual"> Agenda </p>
-            </a>
-            <a href="/front/Chat/Chat.html" class="link_pagina_nova">
-               <img src="../../img/Chat.svg" alt="" class="icone">
-               <p class="texto_icone"> Chat </p>
-            </a>
-            <a href="/front/feed/feed.html" class="link_pagina_nova">
+           </a>
+           <a href="../Solicitações/Solicitaçoes.html" class="link_pagina_nova">
+               <img src="../../img/Formulario.svg" alt="" class="icone">
+               <p class="texto_icone"> Solicitações </p>
+           </a>
+           <a href="../Feed/Feed.html" class="link_pagina_nova">
                <img src="../../img/Feed.svg" alt="" class="icone">
                <p class="texto_icone"> Feed </p>
-            </a>
+           </a>
+           <a href="../Perfil/Perfil.html" class="link_pagina_nova">
+               <img src="../../img/Perfil.svg" alt="" class="icone_perfil">
+               <p class="texto_icone"></p>
+           </a>
          </ul>
       </nav>
    </header>
@@ -85,14 +89,4 @@
    </main>
 </body>
 <script src="Agenda.js"></script>
-<script>
-  function mascaraHora(input) {
-    let valor = input.value.replace(/\D/g, ''); // Remove caracteres que não são números
-    if (valor.length >= 3) {
-      input.value = valor.substring(0, 2) + ':' + valor.substring(2, 4);
-    } else if (valor.length >= 1) {
-      input.value = valor.substring(0, 2);
-    }
-  }
-</script>
 </html>

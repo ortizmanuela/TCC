@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="feed.css">
+    <link rel="stylesheet" href="Feed.css">
     <title>Feed</title>
 </head>
 
@@ -17,24 +17,28 @@
     <!-- Header -->
     <header>
         <nav id="navbar">
-            <img id="nav_logo" src="../../img/logo_header.png" alt="">
+            <img id="nav_logo" src="../../img/Logo_header.png" alt="">
 
             <ul id="nav_list">
-                <a href="/front/Arquivos/Arquivos.html" class="link_pagina_nova">
+                <a href="../Arquivos/Arquivos.html" class="link_pagina_nova">
                     <img src="../../img/Arquivo.svg" alt="" class="icone">
                     <p class="texto_icone"> Arquivos </p>
                 </a>
-                <a href="/front/Agenda/Agenda.html" class="link_pagina_nova">
+                <a href="../Agenda/Agenda.html" class="link_pagina_nova">
                     <img src="../../img/Agenda.svg" alt="" class="icone">
                     <p class="texto_icone"> Agenda </p>
                 </a>
-                <a href="/front/Chat/Chat.html" class="link_pagina_nova">
-                    <img src="../../img/Chat.svg" alt="" class="icone">
-                    <p class="texto_icone"> Chat </p>
+                <a href="../Solicitações/Solicitaçoes.html" class="link_pagina_nova">
+                    <img src="../../img/Formulario.svg" alt="" class="icone">
+                    <p class="texto_icone"> Solicitações </p>
                 </a>
-                <a href="/front/feed/feed.html" class="link_pagina_nova">
+                <a href="../Feed/Feed.html" class="link_pagina_nova">
                     <img src="../../img/Feed.svg" alt="" class="icone">
                     <p class="texto_icone_atual"> Feed </p>
+                </a>
+                <a href="../Perfil/Perfil.html" class="link_pagina_nova">
+                    <img src="../../img/Perfil.svg" alt="" class="icone_perfil">
+                    <p class="texto_icone"></p>
                 </a>
             </ul>
     </header>
@@ -48,7 +52,7 @@
 
         <div id="novo_post">
             <button class="botao">
-                <img src="../../img/adicionar_branco.svg" alt="" class="img_botao">
+                <img src="../../img/Adicionar_branco.svg" alt="" class="img_botao">
                 <a>Novo Post </a>
             </button>
         </div>
@@ -56,7 +60,7 @@
         <div id="quadro_postando" style="display: none;"> <!-- Inicialmente oculto -->
             <section class="bloco_profissional">
                 <div class="profissional_post">
-                    <img src="../../img/icone_usuario_branco.svg" alt="" class="icone_usuario_branco">
+                    <img src="../../img/Icone_usuario_branco.svg" alt="" class="icone_usuario_branco">
                     <p class="escrita_novo_post"> Profissional 1 </p>
                 </div>
                 <div class="sair">
@@ -74,7 +78,7 @@
 
                 <section class="bloco_icones">
                     <button id="quadro_formulario" type="button" onclick="enviar()">
-                        <img src="../../img/adicionar_branco.svg" alt="" class="img_botao">
+                        <img src="../../img/Adicionar_branco.svg" alt="" class="img_botao">
                         Adicionar post
                     </button>
                 </section>
@@ -84,7 +88,7 @@
 
     <div class="fundo" id="fundo" style="display: none;"></div> <!-- Inicialmente oculto -->
 
-    <script src="feed.js"></script>
+    <script src="Feed.js"></script>
 </body>
 
 </html>

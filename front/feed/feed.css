@@ -30,7 +30,7 @@ header {
 #nav_list {
     display: flex;
     text-decoration: none;
-    gap: 30%;
+    gap: 20%;
 }
 
 .nav-item a {
@@ -60,7 +60,6 @@ header {
     font-weight: bold;
     text-decoration:underline;
 }
-
 
 /* main */
 *{

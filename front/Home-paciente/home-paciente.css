@@ -33,6 +33,12 @@ header {
     gap: 30%;
 }
 
+.nav-item a {
+    text-decoration: none;
+    color: #597F34;
+    text-align: center;
+}
+
 .link_pagina_nova {
     display: flex;
     align-items: center;
@@ -50,21 +56,26 @@ header {
     height: 80%;
 }
 
+.texto_icone_atual {
+    font-weight: bold;
+    text-decoration:underline;
+}
+
 
 /* main */
-
-main {
-    margin: 0;
-    padding: 0;
+*{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+}
+
+main {
     background-color: #FFFCE9;
-    
+    height: 100vh;
 }
 
 .sobre {
-    font-size: 200%;
+    font-size: 32px;
     font-weight: bolder;
     color: #D4A373;
     margin-left: 3%;

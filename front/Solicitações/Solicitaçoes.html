@@ -7,8 +7,8 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
        rel="stylesheet">
-   <link rel="stylesheet" href="Arquivo.css">
-   <title>Arquivos</title>
+   <link rel="stylesheet" href="Solicitaçoes.css">
+   <title>Solicitações</title>
 </head>
 <body>
    
@@ -20,7 +20,7 @@
            <ul id="nav_list">
                 <a href="../Arquivos/Arquivos.html" class="link_pagina_nova">
                     <img src="../../img/Arquivo.svg" alt="" class="icone">
-                    <p class="texto_icone_atual"> Arquivos </p>
+                    <p class="texto_icone"> Arquivos </p>
                 </a>
                 <a href="../Agenda/Agenda.html" class="link_pagina_nova">
                     <img src="../../img/Agenda.svg" alt="" class="icone">
@@ -28,11 +28,15 @@
                 </a>
                 <a href="../Solicitações/Solicitaçoes.html" class="link_pagina_nova">
                     <img src="../../img/Formulario.svg" alt="" class="icone">
-                    <p class="texto_icone"> Solicitações </p>
+                    <p class="texto_icone_atual"> Solicitações </p>
                 </a>
                 <a href="../Feed/Feed.html" class="link_pagina_nova">
                     <img src="../../img/Feed.svg" alt="" class="icone">
                     <p class="texto_icone"> Feed </p>
+                </a>
+                <a href="../Perfil/Perfil.html" class="link_pagina_nova">
+                    <img src="../../img/Perfil.svg" alt="" class="icone_perfil">
+                    <p class="texto_icone"></p>
                 </a>
                 <a href="../Perfil/Perfil.html" class="link_pagina_nova">
                     <img src="../../img/Perfil.svg" alt="" class="icone_perfil">
@@ -43,29 +47,19 @@
 
    <!-- Main --->
     <main>
-        <p class="pagina"> Arquivos </p>
+        <p class="pagina"> Solicitações </p>
 
-        <a id="adicionar" class="adicionar">
-            <img src="../../img/+.svg" alt="">
-            <p class="texto"> Adicionar </p>
-        </a>
+        <div class="inputs">
+            <input class="input_campo" id="nome_completo" type="text" placeholder="Nome Completo">
+            <input class="input_campo" id="e-mail" type="text" placeholder="E-mail">
+            <input class="input_campo" id="numero_telefone" type="text" placeholder="Número de Telefone">
 
-        <div id="formulario" class="botoes">
-            <a href="" type="" class="botao" id="botao">
-                <img class="img_nova_pasta" src="../../img/Pasta.svg" alt="">
-                <input type="file" id="nova_pasta" name="nova_pasta">
-                <p class="texto"> Nova pasta </p>
-            </a>
-            <a href="" type="file" class="botao" id="ultimo_botao">
-                <img class="img_arquivos" src="../../img/Clipes_arquivos.svg" alt="">
-                <input type="file" id="arquivo" name="arquivo">
-                <p class="texto"> Arquivos </p>
-            </a> 
+            <input class="input_campo" id="observaçoes" type="text" placeholder="Observações">
         </div>
-       
-
+        
+        <button class="enviar" id="enviar"> Enviar </button>
     </main>
 
-    <script src="Arquivos.js"></script>
+    <script src="Solicitaçoes.js"></script>
 </body>
 </html>

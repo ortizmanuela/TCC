@@ -30,7 +30,7 @@ header {
 #nav_list {
   display: flex;
   text-decoration: none;
-  gap: 30%;
+  gap: 20%;
 }
 
 .link_pagina_nova {
@@ -55,7 +55,14 @@ header {
   text-decoration:underline;
 }
 
-/* Principal */
+#icone_perfil {
+  height: auto;
+  width: 170%;
+  margin-right: 100%;
+}
+
+
+/* Main */
 * {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
