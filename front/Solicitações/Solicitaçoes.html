@@ -38,10 +38,6 @@
                     <img src="../../img/Perfil.svg" alt="" class="icone_perfil">
                     <p class="texto_icone"></p>
                 </a>
-                <a href="../Perfil/Perfil.html" class="link_pagina_nova">
-                    <img src="../../img/Perfil.svg" alt="" class="icone_perfil">
-                    <p class="texto_icone"></p>
-                </a>
             </ul>
    </header>
 
@@ -49,15 +45,20 @@
     <main>
         <p class="pagina"> Solicitações </p>
 
-        <div class="inputs">
-            <input class="input_campo" id="nome_completo" type="text" placeholder="Nome Completo">
-            <input class="input_campo" id="e-mail" type="text" placeholder="E-mail">
-            <input class="input_campo" id="numero_telefone" type="text" placeholder="Número de Telefone">
+        <div id="card">
+            <div class="textos">
+                <h1 class="nome\">Manuela Ortiz da Silva</h1>
+                <p class="email"><span class="negrito"> E-mail: </span> ortizmanuela0811@gmail.com</p>
+                <p class="telefone"><span class="negrito">Número de Telefone: </span> 51994230463</p>
+                <p class="observaçoes"><span class="negrito">Motivo da Consulta: </span>Estou sentido isso</p>
+            </div>
 
-            <input class="input_campo" id="observaçoes" type="text" placeholder="Observações">
+            <div class="botoes">
+                <button class="botao_individual">Recusar</button>
+                <button class="botao_individual">Aceitar</button>
+                <button class="botao_individual">Finalizar</button>
+            </div>
         </div>
-        
-        <button class="enviar" id="enviar"> Enviar </button>
     </main>
 
     <script src="Solicitaçoes.js"></script>

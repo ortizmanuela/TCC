@@ -1,13 +1,27 @@
-// Dados fictícios do usuário (substitua com dados reais do backend)
-const userData = {
-    name: "Maria Silva",
-    email: "maria.silva@email.com"
-};
+// Função para buscar os dados do usuário na API
+async function fetchUserData(userId) {
+    try {
+        const response = await fetch(`/api/usuario/${userId}`);
+        if (response.ok) {
+            const data = await response.json();
+            return data;
+        } else {
+            throw new Error('Erro ao buscar dados do usuário');
+        }
+    } catch (error) {
+        console.error(error);
+    }
+}
 
 // Função para exibir os dados do usuário
-function displayUserData() {
-    document.getElementById("userName").textContent = userData.name;
-    document.getElementById("userEmail").textContent = userData.email;
+async function displayUserData() {
+    const userId = 1; // Substitua pelo ID real do usuário
+    const userData = await fetchUserData(userId);
+
+    if (userData) {
+        document.getElementById("userName").textContent = userData.nome;
+        document.getElementById("userEmail").textContent = userData.email;
+    }
 }
 
 // Função para excluir a conta

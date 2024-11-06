@@ -61,9 +61,8 @@ header {
     text-decoration:underline;
 }
 
-
-/* main */
-*{
+/* Main */
+* {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -71,7 +70,10 @@ header {
 
 main {
     background-color: #FFFCE9;
-    height: 100vh;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .pagina {
@@ -80,5 +82,62 @@ main {
     font-size: 150%;
     color: #D4A373;
     font-weight: bold;
-    text-decoration:underline;
+    text-decoration: underline;
+    align-self: flex-start;
+} 
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15vw;
+    margin-top: 4%;
+}
+
+.input-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.input-box {
+    background-color: #CCD5AE;
+    border-radius: 2vw;
+    color: #597F34;
+    width: 20vw;
+    display: flex;
+    border: none;
+    padding: 7%;
+    margin-top: 5%;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+#observaçoes {
+    background-color: #CCD5AE;
+    color: #597F34;
+    border-radius: 2vw;
+    border: none;
+    margin-top: 5%;
+    /* height: 55vh;
+    width: 30vw; */
+    padding: 2% 30% 40% 2%;
+    font-weight: bold;
+    flex: 1 1 100%; /* Faz o campo de observações mais comprido */
+}
+
+.enviar {
+    background-color: #597F34;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    width: 20vw;
+    padding: 5%;
+    margin-top: 3%;
+    border: none;
+    border-radius: 2vw;
+    color: white;
+    font-size: 1rem;    
 }

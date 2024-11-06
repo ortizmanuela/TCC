@@ -76,13 +76,14 @@ main {
 }
 
 .pagina {
-  padding-top: 2%;
-  padding-left: 9%;
+  margin-top: 2%;
+  padding-left: 15%;
   font-size: 150%;
   color: #D4A373;
   font-weight: bold;
   text-decoration: underline;
-
+  margin-bottom: 10%
+  
 } 
 
 /* Importa a fonte Google - Poppins */
@@ -94,7 +95,7 @@ main {
   width: 700px;
   margin-left: 10px;
   margin-right: 10px;
-  padding: 5%;
+  padding: 1.5%;
 }
 
 .wrapper header {
@@ -140,7 +141,7 @@ header .data-atual {
   background: #fff;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
   border-radius: 10px;
-  padding: 4%;
+  padding: 2%;
 }
 
 .calendario ul {

@@ -73,6 +73,8 @@ main {
   background-color: #FFFCE9;
   height: 90vh;
   display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .pagina {
@@ -82,72 +84,47 @@ main {
   color: #D4A373;
   font-weight: bold;
   text-decoration: underline;
-
+  align-self: flex-start;
 } 
 
-#nome_completo {
+#card {
+  flex-direction: column;
   background-color: #CCD5AE;
-  border-radius: 2vw;
-  color: #597F34;
-  width: 200%;
-  display: flex;
-  border: none;
-  padding: 7%;
-  margin-top: 5%;
-  font-size: 100%;
-  font-weight: bold;
-}
-
-#e-mail {
-  background-color: #CCD5AE;
-  border-radius: 2vw;
-  color: #597F34;
-  width: 200%;
-  display: flex;
-  border: none;
-  padding: 7%;
-  margin-top: 5%;
-  font-size: 100%;
-  font-weight: bold;
-}
-
-#numero_telefone {
-  background-color: #CCD5AE;
-  border-radius: 2vw;
-  color: #597F34;
-  width: 200%;
-  display: flex;
-  border: none;
-  padding: 7%;
-  margin-top: 5%;
-  font-size: 100%;
-  font-weight: bold;
-}
-
-#observaçoes {
-  background-color: #CCD5AE;
-  border-radius: 2vw;
-  color: #597F34;
-  width: 200%;
-  display: flex;
-  border: none;
-  padding: 7%;
-  margin-top: 5%;
-  font-size: 100%;
-  font-weight: bold;
-}
-
-.enviar {
-  background-color: #597F34;
-  border-radius: 2vw;
-  text-decoration: none;
-  color: white;
-  width: 25%;
-  display: flex;
-  justify-content: center;
-  border: none;
-  padding: 1%;
-  margin-left: 37%;
+  width: 50vw;
+  margin-left: 2%;
   margin-top: 2%;
-  font-size: 100%;
+  border-radius: 2vw;
+  padding: 2%;
 }
+
+.textos {
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+}
+
+.negrito {
+  font-weight: bold;
+}
+
+.botao_individual {
+  background-color: #597F34;
+  color: #FFFCE9; 
+  padding: 10px 20px;
+  border-radius: 10px; 
+  border: none; 
+  font-size: 100%;
+  margin: 5px; 
+  margin-top: 5%;
+  justify-content: center;
+}
+
+.botoes {
+  display: flex; 
+  justify-content: center; 
+  gap: 10px; 
+  margin-top: 20px; 
+}
+
+
+
