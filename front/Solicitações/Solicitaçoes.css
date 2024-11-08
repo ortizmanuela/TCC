@@ -91,16 +91,20 @@ main {
   flex-direction: column;
   background-color: #CCD5AE;
   width: 50vw;
+  max-width: 600px; /* Limita a largura do card */
   margin-left: 2%;
   margin-top: 2%;
   border-radius: 2vw;
   padding: 2%;
 }
 
+
 .textos {
   display: flex;
   flex-direction: column;
   gap: 5vh;
+  overflow-wrap: break-word; /* Garante que o texto será quebrado se ultrapassar o limite */
+  word-wrap: break-word;
 }
 
 .negrito {

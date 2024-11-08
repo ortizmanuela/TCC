@@ -108,7 +108,8 @@ main {
 .perfil {
     display: inline-block;
     vertical-align: top;
-    margin-top: 2%;
+    margin-top: 2.4%;
+    margin-left: 0.5%;
     text-align: justify;
     color: #CCD5AE;
     font-size: small;
@@ -124,4 +125,6 @@ main {
     margin-left: 1%;
     text-align: justify;
 }
+
+
 

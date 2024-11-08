@@ -1,4 +1,18 @@
 document.addEventListener("DOMContentLoaded", function() {
+
+    document.getElementById("horario_consulta").addEventListener("input", function () {
+        let valor = this.value.replace(/\D/g, ""); // Remove caracteres não numéricos
+
+        if (valor.length >= 3) {
+            // Insere ':' após os dois primeiros dígitos
+            valor = valor.replace(/^(\d{2})(\d)/, "$1:$2");
+        }
+
+        // Limita para HH:MM
+        this.value = valor.slice(0, 5);
+    });
+
+
     const dataAtualEl = document.querySelector(".data-atual");
     const diasEl = document.querySelector(".dias");
     const anteriorEl = document.querySelector("#anterior");

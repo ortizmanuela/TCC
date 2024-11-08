@@ -30,7 +30,7 @@ quadro_formulario.addEventListener('click', function() {
   console.log(dados);
   const response = await fetch('http://localhost:3100/api/store/feed', {
     method: "POST",
-    headers: {"Content-type": "application/json;charset=UTF-8"},
+    headers: {"Content-type": "application/json;charset=UTF-8"},  
     body: JSON.stringify(dados)
   })
 
