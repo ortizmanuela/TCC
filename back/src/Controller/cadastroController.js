@@ -1,5 +1,4 @@
 const connection = require('../config/db.js');
-const dotenv = require('dotenv').config();
 
 async function storeUser(request, response) {
     const params = Array(

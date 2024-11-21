@@ -4,13 +4,15 @@ async function storeFormulario(request, response) {
     const params = [
         request.body.nome,
         request.body.email,
-        request.body.numero_telefone,
+        request.body.telefone,
         request.body.observacoes
-    ]
-    const query = 'INSERT INTO formulario (nome, email, numero_telefone, observacoes) VALUES (?, ?, ?, ?)';
+    ];
+
+    console.log(params)
+    const query = 'INSERT INTO formulario (nome, email, numero_telefone, observaçoes) VALUES (?, ?, ?, ?)';
 
     connection.query(query, params, (err, results) => {
-        if(results){
+        if (results) {
             response
                 .status(200)
                 .json({
@@ -18,20 +20,18 @@ async function storeFormulario(request, response) {
                     message: "Sucesso!",
                     data: results
                 });
-            }else{
-                response
-                    .status(400)
-                    .json({
-                        sucess: false,
-                        message: erro,
-                        data: err
-                    })
+        } else {
+            response
+                .status(500)
+                .json({
+                    success: false,
+                    message: err.message,
+                    data: err
+                });
         }
-    })
+    });
 }
+
 module.exports = {
-
     storeFormulario
-}
-
-    
+};

@@ -2,16 +2,33 @@ const pool = require('../config/db');
 
 // Função para armazenar um post no banco de dados
 async function storeFeed(request, response) {
-    const { titulo, legenda } = request.body;
+
+
+    const params = [
+        request.body.titulo,
+        request.body.legenda
+    ]
+
+    console.log(params);
+
     const query = "INSERT INTO posts(titulo, legenda) VALUES(?, ?)";
 
+    
     try {
-        const [results] = await pool.query(query, [titulo, legenda]);
-        return response.status(200).json({
-            success: true,
-            message: "Post inserido com sucesso!",
-            data: results,
-        });
+        pool.query(query, params, (err, results) => {
+            if(results){
+                response
+                    .status(200)
+                    .json({
+                        success: true,
+                        message: "Sucesso ao cadastrar",
+                        data: results
+                    })
+            }
+
+
+        })
+        
     } catch (err) {
         return response.status(400).json({
             success: false,
@@ -27,12 +44,16 @@ async function getPost(request, response) {
     const query = "SELECT * FROM posts";
 
     try {
-        const [results] = await pool.query(query);
-        return response.status(200).json({
-            success: true,
-            message: "Posts retornados com sucesso!",
-            data: results,
-        });
+        pool.query(query, (err, results) => {
+
+            return response.status(200).json({
+                success: true,
+                message: "Posts retornados com sucesso!",
+                data: results,
+            });
+
+        })
+
     } catch (err) {
         return response.status(500).json({
             success: false,

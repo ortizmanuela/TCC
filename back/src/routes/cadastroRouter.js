@@ -21,6 +21,3 @@ const { storeUser } = require('../Controller/cadastroController');
 router.post('/store/user', storeUser);
 
 module.exports = router;
-
-
-// rota do cadastro, e chamando o express e controller

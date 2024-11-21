@@ -4,7 +4,7 @@ const router = express.Router();
 const {storeFormulario} = require('../Controller/formularioController');
 /**
  * @swagger
- * /formulario:
+ * /enviarformulario:
  *   post:
  *     summary: Cria um novo formulário
  *     description: Recebe dados do formulário do paciente e os insere no banco de dados
@@ -29,6 +29,6 @@ const {storeFormulario} = require('../Controller/formularioController');
  *       500:
  *         description: Erro ao salvar o formulário
  */
-router.post('/formulario', storeFormulario);
+router.post('/enviarFormulario', storeFormulario);
 
 module.exports = router;

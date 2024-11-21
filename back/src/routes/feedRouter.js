@@ -36,4 +36,4 @@ router.post('/store/feed', storeFeed);
  */
 router.get('/getposts', getPost);
 
-module.exports = router
+module.exports = router;

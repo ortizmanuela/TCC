@@ -19,4 +19,4 @@ const { login } = require('../Controller/loginController');
  */
 router.post('/login', login);
 
-module.exports = router
+module.exports = router;

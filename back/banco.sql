@@ -4,19 +4,18 @@ use db_posts;
 
 CREATE TABLE usuarios(
     id INT PRIMARY KEY auto_increment,
-    nome VARCHAR(100) NOT NULL,
     email VARCHAR(100) NOT NULL UNIQUE,
+    nome VARCHAR(100) NOT NULL,
     senha VARCHAR(255) NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
-create table chats (
+create table formulario (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    user1_id INT NOT NULL,
-    user2_id INT NOT NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (user1_id) REFERENCES usuarios(id) ON DELETE CASCADE,
-    FOREIGN KEY (user2_id) REFERENCES usuarios(id) ON DELETE CASCADE
+    nome VARCHAR (100) NOT NULL,
+    email VARCHAR (100) NOT NULL UNIQUE,
+    numero_telefone VARCHAR (11) NOT NULL UNIQUE,
+    observaçoes VARCHAR (1000) NOT NULL
 );
 
 create table posts(
@@ -26,15 +25,19 @@ create table posts(
     legenda VARCHAR (255) NOT NULL
 );
 
-create table arquivos (
+CREATE TABLE arquivos (
     id INT AUTO_INCREMENT PRIMARY KEY,
-	nome_arquivo VARCHAR(255) NOT NULL UNIQUE,
-    tipo_arquivo VARCHAR(255) NOT NULL,
-    arquivo_url VARCHAR(255) NOT NULL UNIQUE,
-    uploaded_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    user_id INT NOT NULL,
+    arquivo_name VARCHAR(255) NOT NULL,
+    arquivo_url VARCHAR(255) NOT NULL,
+    uploaded_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
 );
 
-select*from usuarios;
-select*from chats;
+select*from usuarios;	
+select*from formulario;
 select*from posts;
 select*from arquivos;
+
+drop table usuarios;
+drop table formulario;
